@@ -1225,6 +1225,10 @@ section {
       img {
         max-width: 100%;
       }
+      i {
+        font-size: 100px;
+        text-align: center;
+      }
     }
     .meta {
       font-size: 11px;
@@ -2796,10 +2800,9 @@ ul.lined-list {
    ========================================================================== */
 
 footer {
-  background: #222;
   color: #ccc;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
-  height: 360px;
+  height: 85px;
   p, span {
     line-height: 1.7em;
     font-weight: 300;
