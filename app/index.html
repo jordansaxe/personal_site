@@ -30,6 +30,8 @@
     ================================================== -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="scripts/modernizr.custom.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/ryo2mui.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     <!-- IE Conditionals
     ================================================== -->
@@ -62,7 +64,7 @@
             <li class="col-sm-2"><a href="#whatido">What I Do</a></li>
             <li class="col-sm-2"><a href="#thingsiwrite">Things I Write</a></li>
             <li class="col-sm-2"><a href="#getintouch">Get In Touch</a></li>
-            <li class="col-sm-2"><a href="#getintouch"><i class="fa fa-chevron-down"></i><span class="hidden">Get Connected</span></a></li>
+            <li class="col-sm-2"><a href="#footer"><i class="fa fa-chevron-down"></i><span class="hidden">Get Connected</span></a></li>
           </ul>
         </div>
       </div>
@@ -128,8 +130,10 @@
               
           <div class="row add-lg-top add-bottom">
             <div class="col-sm-4">
+              <div class="skills-header">
+                <h4>Skills</h4>
+              </div>
                 <p>Learning doesn't stop once you graduate or when you clock out at the end of the workday. I am constantly working to improve my skills and become better day in and day out. Here you'll find my current skill sets, and ones I am currently learning.</p>
-                <p><a href="#" class="btn btn-primary">Read More</a></p>
             </div>
                 <div class="col-sm-4">
                   <div class="progress progress-danger border-radius" data-appear-progress-animation="80%">
@@ -295,64 +299,25 @@
           </h1>
         </div>
         
-        <div class="gmap">
-          <!--Google Maps APIv3 Background-->
-          <div id="canvas_holder">
-            <div id="map_canvas"></div>
-          </div><!-- End Google Maps Background -->
-        </div>
-        
         <div class="container">        
           <h2 class="sub-title">
-            Use the form below to get a quick quote on a project or to simply say hello. I try to be promt and answer any emails within 48 hours. If you send a spam email, I respond with a creative answer.
+            Fill out the form below and let's chat!
           </h2>
             
           <div class="row">
-            <div class="col-sm-8">
+            <div class="col-sm-12">
               <form class="contact">
                 <div class="row">
                   <div class="col-sm-6">
                     <label class="required" for="name">
                       Your Name
-                      <input type="text" name="name" id="name" placeholder="John Stuart" required>
+                      <input type="text" name="name" id="name" placeholder="Name" required>
                     </label>
                   </div>
                   <div class="col-sm-6">
                     <label class="required" for="email">
                       Your Email
-                      <input type="email" name="email" id="email" placeholder="John@Stuart.com" required>
-                    </label>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <label for="budget">
-                      Budget
-                      <select id="budget">
-                        <option disabled="" selected="">~ Select One ~</option>
-                        <option>Less than $500</option>
-                        <option>$500 - $999</option>
-                        <option>$1,000 - $1,999</option>
-                        <option>$2,000 - $4,999</option>
-                        <option>$5,000 - $9,999</option>
-                        <option>$10,000 - $19,999</option>
-                        <option>More than $20,000</option>
-                      </select>
-                    </label>
-                  </div>
-                  <div class="col-sm-6">
-                    <label for="time">
-                      Completion Time
-                      <select id="time">
-                        <option disabled="" selected="">~ Select One ~</option>
-                        <option>Less than One Week</option>
-                        <option>Three Weeks</option>
-                        <option>One Month</option>
-                        <option>Three Months</option>
-                        <option>Six Months</option>
-                        <option>One Year</option>
-                        <option>Continuous</option>
-                      </select>
+                      <input type="email" name="email" id="email" placeholder="Email" required>
                     </label>
                   </div>
                 </div>
@@ -365,60 +330,28 @@
                 </div>
               </form>
             </div>
-            <div class="col-sm-4 contact-address">
-              <h3 class="heading turquoise add-xs-top">Stay In Touch</h3>
-                <p>Katuski utade marido alifando. Lipsum dolor slo onsec tueraliquet Morbi nec In Curabitur lreaoreet nisl lorem in pellente pellente eget.</p>
-                    
-              <h3 class="heading blue add-sm-top">Example addresses</h3>
-                <address><abbr title="Address"><i class="fa fa-thumb-tack"></i></abbr>Catharsis Media Group<br />
-                                  123 Some Street, New York, NY 12345
-                </address>
-                <address><abbr title="Phone"><i class="fa fa-phone"></i></abbr>1.718.456.7890</address>
-                <address><abbr title="Fax"><i class="fa fa-print"></i></abbr>1.718.045.6789</address>
-                <address><abbr title="Email"><i class="fa fa-envelope"></i></abbr>support@catharsis.com</address>
+          </div>
+        </div>
+        <section id="social-bar">
+          <div class="container">
+            <div class="social-wrapper">
+              <div class="social" style="height: 80px;">
+                <div><a href="https://www.facebook.com/jordansaxe"><img src="images/social/facebook.png" alt="Facebook"></a></div>
+                <div><a href="https://twitter.com/jordansaxe"><img src="images/social/twitter.png" alt="Twitter"></a></div>
+                <div><a href="https://www.linkedin.com/in/jsaxe"><img src="images/social/linkedin.png" alt="Linkedin"></a></div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- Social Bar -->
-      <section id="social-bar">
-        <div class="container">
-          <div class="social-wrapper">
-            <h2>Social Places</h2>
-            <div class="social" style="height: 80px;">
-              <div><a href="#"><img src="images/social/facebook.png" alt="Facebook"></a></div>
-              <div><a href="#"><img src="images/social/google.png" alt="Google"></a></div>
-              <div><a href="#"><img src="images/social/twitter.png" alt="Twitter"></a></div>
-              <div><a href="#"><img src="images/social/linkedin.png" alt="Linkedin"></a></div>
-              <div><a href="#"><img src="images/social/dribbble.png" alt="Dribbble"></a></div>
-              <div><a href="#"><img src="images/social/forrst.png" alt="Forrst"></a></div>
-              <div><a href="#"><img src="images/social/zerply.png" alt="Zerply"></a></div>
-              <div><a href="#"><img src="images/social/skype.png" alt="Skype"></a></div>
-              <div><a href="#"><img src="images/social/youtube.png" alt="Youtube"></a></div>
-            </div><a class="show-more" href="#" style="display: none;"></a>
-          </div>
-        </div>
-      </section>
+        </section>
+      </section>      
           
-      <!-- Le Footer -->    
-      <footer class="footer-wrapper hidden-xs">
-        <div class="footer-slogan">
+      <!-- Le Footer -->
+      <div id="footer">
+        <div class="footer-copyright">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6">
-                <h2>Download my <strong>kick-ass</strong> <a href="resume.html">resume</a></h2>
+              <div class="col-sm-12">
+                &copy; Base theme from Simply.Me. Tweaked by Jordan Saxe
               </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      <div class="footer-copyright">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8">
-              &copy; Simply.Me. All Rights Reserved.
             </div>
           </div>
         </div>
