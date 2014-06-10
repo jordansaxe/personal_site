@@ -306,27 +306,27 @@
             
           <div class="row">
             <div class="col-sm-12">
-              <form class="contact">
+              <form method="POST" action="mailer.php" class="contact">
                 <div class="row">
                   <div class="col-sm-6">
                     <label class="required" for="name">
                       Your Name
-                      <input type="text" name="name" id="name" placeholder="Name" required>
+                      <input type="text" name="contact_name" id="name" placeholder="Name" required>
                     </label>
                   </div>
                   <div class="col-sm-6">
                     <label class="required" for="email">
                       Your Email
-                      <input type="email" name="email" id="email" placeholder="Email" required>
+                      <input type="email" name="contact_email" id="email" placeholder="Email" required>
                     </label>
                   </div>
                 </div>
                 <label class="required">
                   Message
-                  <textarea rows="7" placeholder="I have an idea for a project..." required></textarea>
+                  <textarea name="contact_message" rows="7" placeholder="I have an idea for a project..." required></textarea>
                 </label>
                 <div class="add-sm-top text-center">
-                  <button class="btn btn-danger" type="submit"><i class="fa fa-envelope"></i> &nbsp; SEND E-MAIL</button>
+                  <button name="save" class="btn btn-danger" type="submit"><i class="fa fa-envelope"></i> &nbsp; SEND E-MAIL</button>
                 </div>
               </form>
             </div>
@@ -336,9 +336,11 @@
           <div class="container">
             <div class="social-wrapper">
               <div class="social" style="height: 80px;">
-                <div><a href="https://www.facebook.com/jordansaxe"><img src="images/social/facebook.png" alt="Facebook"></a></div>
-                <div><a href="https://twitter.com/jordansaxe"><img src="images/social/twitter.png" alt="Twitter"></a></div>
-                <div><a href="https://www.linkedin.com/in/jsaxe"><img src="images/social/linkedin.png" alt="Linkedin"></a></div>
+                <div><a href="https://www.facebook.com/jordansaxe"><i class="fa fa-facebook fa-3x" alt="Facebook"></i></a></div>
+                <div><a href="https://twitter.com/jordansaxe"><i class="fa fa-twitter fa-3x" alt="Twitter"></i></a></div>
+                <div><a href="https://www.linkedin.com/in/jsaxe"><i class="fa fa-linkedin fa-3x" alt="LinkedIn"></i></a></div>
+                <div><a href="http://instagram.com/jordansaxe"><i class="fa fa-instagram fa-3x" alt="Instagram"></i></a></div>
+                <div><a href="https://github.com/jordansaxe"><i class="fa fa-github fa-3x" alt="GitHub"></i></a></div>
             </div>
           </div>
         </section>
