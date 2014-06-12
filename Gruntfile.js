@@ -109,6 +109,8 @@ module.exports = function (grunt) {
             }
         },
 
+
+
         // Empties folders to start fresh
         clean: {
             dist: {
@@ -173,6 +175,19 @@ module.exports = function (grunt) {
                     ext: '.css'
                 }]
             }
+        },
+
+        'ftp-deploy': {
+          build: {
+            auth: {
+              host: 'ftp.jordansaxe.com',
+              port: 21,
+              authKey: 'key1'
+            },
+            src: '.',
+            dest: '/public_html',
+            exclusions: ['/Users/jordansaxe15/Dropbox/Development/personal-site.DS_Store', '/Users/jordansaxe15/Dropbox/Development/personal-site/Thumbs.db']
+          }
         },
 
         // Add vendor prefixed styles
@@ -243,7 +258,10 @@ module.exports = function (grunt) {
                     cwd: '<%= config.app %>/images',
                     src: '{,*/}*.{gif,jpeg,jpg,png}',
                     dest: '<%= config.dist %>/images'
-                }]
+                }],
+                options: {
+                    cache: false
+                }
             }
         },
 
@@ -355,6 +373,7 @@ module.exports = function (grunt) {
         }
     });
 
+    grunt.loadNpmTasks('grunt-ftp-deploy');
 
     grunt.registerTask('serve', function (target) {
         if (target === 'dist') {
